@@ -1,10 +1,13 @@
 ﻿using System;
 
-class Program
+namespace CSharpTutorial
 {
-    static void Main()
+    class Program
     {
-        Console.WriteLine("Welcome to C#");
+        static void Main()
+        {
+            Console.WriteLine("Welcome to C#");
+        }
     }
 }
 
