@@ -2,16 +2,36 @@
 
 namespace CSharpTutorial
 {
+
+    //instance class
+    class Circle
+    {
+         float _pi = 3.141f;
+         int _radius;
+
+        public Circle(int radius)
+        {
+            _radius = radius;
+        }
+
+        public float CalculateArea()
+        {
+            return _pi * _radius * _radius;
+        }
+    }
+
     class Program
     {
         static void Main()
         {
-            string name = null; //refrence types can be set to null
+         
+            Circle c1 = new Circle(5);
+            float area = c1.CalculateArea();
+            Console.WriteLine("Area is {0}", area);
 
-           // int i = null; //This will not compile because a value type can't be set to null
-
-            int? i2 = null; //This can be set to null because it is a nullable int (? after the type)
-
+            Circle c2 = new Circle(6);
+            float area2 = c2.CalculateArea();
+            Console.WriteLine("Area is {0}", area2);
 
         }
     }
