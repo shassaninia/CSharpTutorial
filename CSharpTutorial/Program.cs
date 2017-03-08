@@ -22,7 +22,7 @@ namespace CSharpTutorial
 
         public new void PrintFullName()
         {
-            base.PrintFullName();
+            Console.WriteLine(FirstName + " " + LastName + " - (Contractor)");
         }
     }
 
@@ -39,7 +39,7 @@ namespace CSharpTutorial
             partTimeEmployee.FirstName = "PartTime";
             partTimeEmployee.LastName = "Employee";
             partTimeEmployee.HourlyRate = 65;
-            partTimeEmployee.PrintFullName();
+            ((Employee)partTimeEmployee).PrintFullName();
             
             FullTimeEmployee fullTimeEmployee = new FullTimeEmployee();
             fullTimeEmployee.FirstName = "FullTime";
