@@ -20,7 +20,7 @@ namespace CSharpTutorial
     {
         public float HourlyRate { get; set; }
 
-        public void PrintFullName()
+        public new void PrintFullName()
         {
             Console.WriteLine(FirstName + " " + LastName + " - (Contractor)");
         }
