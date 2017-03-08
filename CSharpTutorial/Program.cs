@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace CSharpTutorial
 {
@@ -8,6 +9,11 @@ namespace CSharpTutorial
         public Employee()
         {
             Console.WriteLine("Base class constructor called");
+        }
+
+        public Employee(string message)
+        {
+            Console.WriteLine(message);
         }
 
         public string FirstName { get; set; }
@@ -22,6 +28,10 @@ namespace CSharpTutorial
 
     class PartTimeEmployee : Employee
     {
+        public PartTimeEmployee() : base("Base class constructor with string parameter called")
+        {
+           
+        }
         public float HourlyRate { get; set; }
     }
 
