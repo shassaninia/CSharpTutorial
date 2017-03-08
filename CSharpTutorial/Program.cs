@@ -22,7 +22,7 @@ namespace CSharpTutorial
 
         public new void PrintFullName()
         {
-            Console.WriteLine(FirstName + " " + LastName + " - (Contractor)");
+            base.PrintFullName();
         }
     }
 
